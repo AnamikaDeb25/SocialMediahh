@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".rating">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Rate our app from 1 to 5 star"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:layout_marginBottom="150dp"
+    android:textColor="@color/black"
+    />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="20dp"
+        android:elevation="10dp"
+        app:contentPadding="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardPreventCornerOverlap="true"
+        >
+        <RatingBar
+            android:id="@+id/rtbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:numStars="5"
+            style="@style/Widget.AppCompat.RatingBar" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>
